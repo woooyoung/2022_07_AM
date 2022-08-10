@@ -16,7 +16,7 @@ public class Main {
 
 		while (true) {
 			System.out.printf("명령어) ");
-			String cmd = sc.nextLine();
+			String cmd = sc.nextLine().trim();
 
 			if (cmd.equals("exit")) {
 				break;
@@ -48,7 +48,10 @@ public class Main {
 					Article article = articles.get(i);
 					System.out.printf("%4d    |    %s\n", article.id, article.title);
 				}
+			} else if (cmd.startsWith("article detail ")) {
+				System.out.printf("%d번 게시글은 존재하지 않습니다\n", 1);
 			} else {
+
 				System.out.println("존재하지 않는 명령어입니다");
 			}
 
