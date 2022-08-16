@@ -1,6 +1,5 @@
 package com.KoreaIT.java.AM.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -19,7 +18,7 @@ public class MemberController {
 
 	int lastMemberId = 0;
 
-	public void doJoin(List<Member> members, Scanner sc) {
+	public void doJoin() {
 		String loginId = null;
 		String loginPw = null;
 		String loginPwC = null;
